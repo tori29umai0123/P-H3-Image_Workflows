@@ -12,7 +12,7 @@ P-H3-Image用の編集可能なComfyUIワークフローを3種類公開して�
 | [キャラ＋ポーズ＋手持ちの物](PH3_chara_pose_held_object.json) | 画像2で手に持っている物の位置や握り方も反映します。 | [作例を見る](PH3_chara_pose_held_object_sample.png) |
 | [衣装変更](PH3_costume_change.json) | 画像1のキャラ・ポーズ・構図を保ち、画像2の衣装を着せます。 | [作例を見る](PH3_costume_change_sample.png) |
 
-ポーズ系の作例PNGは、上段左がキャラの入力画像、上段右がポーズ・参照の入力画像、下段が出力結果です。衣装変更の作例は横並びで、左からキャラの入力画像、衣装の入力画像、出力結果です。[example_inputs](example_inputs) に各作例で使った入力画像6枚を収録しています。[verification_image](verification_image) には、ほかの組み合わせを試せる番号付き画像ペアもあります。
+ポーズ系の作例PNGは、上段左がキャラの入力画像、上段右がポーズ・参照の入力画像、下段が出力結果です。衣装変更の作例は横並びで、左からキャラの入力画像、衣装の入力画像、出力結果です。[verification_image](verification_image) に各作例で使った入力画像と、ほかの組み合わせを試せる番号付き画像ペアを収録しています。
 
 ### 作例画像
 
@@ -47,16 +47,16 @@ P-H3-Image用の編集可能なComfyUIワークフローを3種類公開して�
 
 ## 作例の実行方法
 
-1. [example_inputs](example_inputs) のPNG6枚を`ComfyUI/input/`にコピーします。各JSONはこのファイル名を初期選択しています。
+1. 下表の6枚を[verification_image](verification_image)から`ComfyUI/input/`直下へコピーします（サブフォルダには入れません）。各JSONはこのファイル名を初期選択しています。
 2. ComfyUIの**Load**またはドラッグ＆ドロップでワークフローJSONを開きます。
 3. 2つの`LoadImage`ノードで画像を確認します。独自の画像を使う場合は、ここでキャラ画像とポーズ・衣装の参照画像を選び直します。
 4. P-H3の3つのモデルローダーとVL Analystのモデル選択を確認し、実行します。出力は`SaveImage`で保存されます。
 
 | ワークフロー | Picture 1／最初の`LoadImage` | Picture 2／2つ目の`LoadImage` |
 | --- | --- | --- |
-| キャラ＋ポーズ | [キャラデザイン](example_inputs/pose_character.png) | [ポーズと表情](example_inputs/pose_reference.png) |
-| キャラ＋ポーズ＋手持ちの物 | [キャラデザイン](example_inputs/held_character.png) | [ポーズ・表情・手持ちの物](example_inputs/held_reference.png) |
-| 衣装変更 | [変更対象のキャラ](example_inputs/costume_character.png) | [衣装資料](example_inputs/costume_reference.png) |
+| キャラ＋ポーズ | [キャラデザイン](verification_image/04_1.png) | [ポーズと表情](verification_image/04_2.png) |
+| キャラ＋ポーズ＋手持ちの物 | [キャラデザイン](verification_image/18_1.png) | [ポーズ・表情・手持ちの物](verification_image/18_2.png) |
+| 衣装変更 | [変更対象のキャラ](verification_image/25_1.png) | [衣装資料](verification_image/01_1.png) |
 
 作例の出力PNGには、生成時のComfyUIメタデータが含まれています。このリポジトリで管理する版を開くときは、上記のJSONファイルを読み込んでください。
 

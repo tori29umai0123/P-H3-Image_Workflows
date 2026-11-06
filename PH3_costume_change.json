@@ -196,7 +196,7 @@
         "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "costume_character.png",
+        "25_1.png",
         "image"
       ],
       "widgets_values_named": {
@@ -240,7 +240,7 @@
         "Node name for S&R": "LoadImage"
       },
       "widgets_values": [
-        "costume_reference.png",
+        "01_1.png",
         "image"
       ],
       "widgets_values_named": {

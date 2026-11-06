@@ -12,7 +12,7 @@ Three editable ComfyUI workflows for P-H3-Image. They combine a character or out
 | [Character + pose + held object](PH3_chara_pose_held_object.json) | Also carries over an object held in image 2, including its placement and the hand contact. | [View sample](PH3_chara_pose_held_object_sample.png) |
 | [Costume change](PH3_costume_change.json) | Keeps the character, pose, and composition of image 1 while applying the outfit from image 2. | [View sample](PH3_costume_change_sample.png) |
 
-The pose sample PNGs show the two input images at the top (character on the left, pose/reference on the right) and the generated result below. The costume-change sample is arranged left to right: character input, outfit input, generated result. The [example_inputs](example_inputs) directory contains the six exact input images used for those examples. [verification_image](verification_image) contains additional numbered image pairs for trying other combinations.
+The pose sample PNGs show the two input images at the top (character on the left, pose/reference on the right) and the generated result below. The costume-change sample is arranged left to right: character input, outfit input, generated result. [verification_image](verification_image) contains the exact input images for these examples and additional numbered pairs.
 
 ### Example results
 
@@ -47,16 +47,16 @@ Install the three custom-node repositories under `ComfyUI/custom_nodes/`, instal
 
 ## Run an example
 
-1. Copy the six PNGs in [example_inputs](example_inputs) into your `ComfyUI/input/` directory. The JSON files select these filenames by default.
+1. Copy the six images linked in the table below from [verification_image](verification_image) directly into `ComfyUI/input/` (not a subfolder). The JSON files select these filenames by default.
 2. Open one of the workflow JSON files in ComfyUI, using **Load** or drag and drop.
 3. Check that both `LoadImage` nodes show the intended images. For your own run, replace them with your character and pose/outfit references.
 4. Check the three P-H3 model loader selections and the VL Analyst model selection, then queue the workflow. The generated image is written by `SaveImage`.
 
 | Workflow | Picture 1 / first `LoadImage` | Picture 2 / second `LoadImage` |
 | --- | --- | --- |
-| Character + pose | [Character design](example_inputs/pose_character.png) | [Pose and expression](example_inputs/pose_reference.png) |
-| Character + pose + held object | [Character design](example_inputs/held_character.png) | [Pose, expression, and held object](example_inputs/held_reference.png) |
-| Costume change | [Character to edit](example_inputs/costume_character.png) | [Outfit reference](example_inputs/costume_reference.png) |
+| Character + pose | [Character design](verification_image/04_1.png) | [Pose and expression](verification_image/04_2.png) |
+| Character + pose + held object | [Character design](verification_image/18_1.png) | [Pose, expression, and held object](verification_image/18_2.png) |
+| Costume change | [Character to edit](verification_image/25_1.png) | [Outfit reference](verification_image/01_1.png) |
 
 The sample output PNGs contain ComfyUI metadata from their original runs. Load the JSON files above when you want the versions maintained in this repository.
 
