@@ -42,9 +42,8 @@ The pose sample PNGs show the two input images at the top (character on the left
 - [ComfyUI-VLAnalyst](https://github.com/tori29umai0123/ComfyUI-VLAnalyst): `QwenVLAnalysisLoader` and `QwenVLAnalysisImage`. The pose workflows select `Qwen/Qwen3.5-9B`; the costume workflow selects `Qwen/Qwen3.5-4B`. Follow that extension's instructions to provide or download the selected vision-language model.
 - [ComfyUI_text_Edit](https://github.com/tori29umai0123/ComfyUI_text_Edit): `TextEditInput`, `TextEditDisplay`, and `TextEditJsonPromptTemplate`.
 - [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes): `ImageBatchMulti` and `ImageConcatMulti`.
-- [ComfyUI_tinyterraNodes](https://github.com/TinyTerra/ComfyUI_tinyterraNodes): `ttN text`.
 
-Install the four custom-node repositories under `ComfyUI/custom_nodes/`, install their documented dependencies, and restart ComfyUI. Core loaders, samplers, `GetImageSize`, and image save/preview nodes come from ComfyUI itself.
+Install the three custom-node repositories under `ComfyUI/custom_nodes/`, install their documented dependencies, and restart ComfyUI. Core loaders, samplers, `GetImageSize`, and image save/preview nodes come from ComfyUI itself.
 
 ## Run an example
 

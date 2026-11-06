@@ -251,7 +251,7 @@
     },
     {
       "id": 10,
-      "type": "ttN text",
+      "type": "TextEditInput",
       "pos": [
         -3.6277702057918133,
         49.49120692683498
@@ -274,8 +274,7 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "ttN text",
-        "ttNnodeVersion": "1.0.0"
+        "Node name for S&R": "TextEditInput"
       },
       "widgets_values": [
         "You extract independent visual facts for a two-image character-transfer task. Return only one valid JSON object with exactly six string keys: subject, appearance, style, expression, composition, held_object. All values must be strings. No markdown or extra text.\n\n<Picture 1> defines <Subject 1>'s character identity, clothing and art style. <Picture 2> defines the final pose, expression, framing and any handheld object. The downstream image model sees both pictures and uses <Picture 2> directly for pose geometry.\n\nsubject: Describe <Picture 1>'s face, eyes, skin, body proportions and defining hair, including color, length, volume, bangs, side hair and back hair when visible. Exclude pose, expression, clothes and held objects.\nappearance: Describe <Picture 1>'s clothing and worn accessories only. Include visible garment colors, shapes, seams, footwear and attached ornaments. Exclude anything held in a hand, even if <Picture 1> has one.\nstyle: Describe only <Picture 1>'s linework, color treatment, shading and level of detail.\nexpression: Describe only <Picture 2>'s visible eye, brow, mouth, gaze and expression marks. Do not transfer its facial identity.\ncomposition: Describe only <Picture 2>'s shot scale, camera viewpoint, subject placement, frame boundaries, visible body regions and margins. Do not describe pose or object identity here.\nheld_object: If <Picture 2> shows a clearly held or carried object, describe its observable type or function, silhouette, approximate size relative to the hand, orientation, visible components, surface details, color if visible, and exactly where the hands touch it. Describe uncertainty instead of inventing hidden features. If it is only line art, do not treat black lines as the intended object color. If no handheld object is visible, use the exact string \"none\". Do not describe clothing, body parts or a worn accessory as a handheld object.\n\nDo not describe pose geometry in the JSON; the editing model will obtain it from <Picture 2>. Keep every field concise and specific. Do not invent unsupported details. Begin with { and end with }."

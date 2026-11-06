@@ -42,9 +42,8 @@ P-H3-Image用の編集可能なComfyUIワークフローを3種類公開して�
 - [ComfyUI-VLAnalyst](https://github.com/tori29umai0123/ComfyUI-VLAnalyst)：`QwenVLAnalysisLoader`、`QwenVLAnalysisImage`。ポーズ系は`Qwen/Qwen3.5-9B`、衣装変更は`Qwen/Qwen3.5-4B`を選択しています。選択した視覚言語モデルの配置・ダウンロード方法は拡張の説明を参照してください。
 - [ComfyUI_text_Edit](https://github.com/tori29umai0123/ComfyUI_text_Edit)：`TextEditInput`、`TextEditDisplay`、`TextEditJsonPromptTemplate`。
 - [ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)：`ImageBatchMulti`、`ImageConcatMulti`。
-- [ComfyUI_tinyterraNodes](https://github.com/TinyTerra/ComfyUI_tinyterraNodes)：`ttN text`。
 
-4つのカスタムノードを`ComfyUI/custom_nodes/`に導入し、各拡張で指定された依存パッケージを入れてからComfyUIを再起動してください。モデルローダー、サンプラー、`GetImageSize`、画像保存・プレビューなどはComfyUI本体のノードです。
+3つのカスタムノードを`ComfyUI/custom_nodes/`に導入し、各拡張で指定された依存パッケージを入れてからComfyUIを再起動してください。モデルローダー、サンプラー、`GetImageSize`、画像保存・プレビューなどはComfyUI本体のノードです。
 
 ## 作例の実行方法
 
